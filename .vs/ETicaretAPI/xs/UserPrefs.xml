@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ETicaret.DAL/Abstract/DataManagement/IRepository.cs">
+    <Files>
+      <File FileName="ETicaret.DAL/Abstract/DataManagement/IRepository.cs" Line="3" Column="46" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ETicaretAPI" expanded="True">
+            <Node name="ETicaret.DAL" expanded="True" selected="True">
+              <Node name="Abstract" expanded="True">
+                <Node name="DataManagement" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="ETicaretAPI.Entity" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

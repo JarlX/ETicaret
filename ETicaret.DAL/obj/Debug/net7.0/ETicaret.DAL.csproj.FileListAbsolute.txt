@@ -1,0 +1,5 @@
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.csproj.CoreCompileInputs.cache

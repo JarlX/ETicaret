@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretAPI.Entity", "ETicaretAPI.Entity\ETicaretAPI.Entity.csproj", "{11A92C71-8AF1-441F-A324-C4D3881DB5BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.DAL", "ETicaret.DAL\ETicaret.DAL.csproj", "{88DAB8CA-5BDF-4D66-A2C7-81E2D59B5B75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11A92C71-8AF1-441F-A324-C4D3881DB5BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A92C71-8AF1-441F-A324-C4D3881DB5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A92C71-8AF1-441F-A324-C4D3881DB5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A92C71-8AF1-441F-A324-C4D3881DB5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DAB8CA-5BDF-4D66-A2C7-81E2D59B5B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DAB8CA-5BDF-4D66-A2C7-81E2D59B5B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DAB8CA-5BDF-4D66-A2C7-81E2D59B5B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DAB8CA-5BDF-4D66-A2C7-81E2D59B5B75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/bin/Debug/net7.0/ETicaretAPI.Entity.deps.json
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/bin/Debug/net7.0/ETicaretAPI.Entity.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/bin/Debug/net7.0/ETicaretAPI.Entity.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/Debug/net7.0/refint/ETicaretAPI.Entity.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/Debug/net7.0/ref/ETicaretAPI.Entity.dll
