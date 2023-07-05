@@ -3,3 +3,15 @@
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.AssemblyInfoInputs.cache
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.AssemblyInfo.cs
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/bin/Debug/net7.0/ETicaret.DAL.deps.json
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/bin/Debug/net7.0/ETicaret.DAL.runtimeconfig.json
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/bin/Debug/net7.0/ETicaret.DAL.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/bin/Debug/net7.0/ETicaret.DAL.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/bin/Debug/net7.0/ETicaretAPI.Entity.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/bin/Debug/net7.0/ETicaretAPI.Entity.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.csproj.CopyComplete
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/refint/ETicaret.DAL.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.genruntimeconfig.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/obj/Debug/net7.0/ref/ETicaret.DAL.dll
