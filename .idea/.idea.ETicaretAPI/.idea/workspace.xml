@@ -5,28 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41fad47a-77fa-4532-8fdc-ef80b94020f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/EfCategoryRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/EfOrderDetailRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/EfOrderRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/EfProductRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/EfUserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Abstract/ICategoryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Abstract/IGenericService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Abstract/IOrderDetailService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Abstract/IOrderService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Abstract/IProductService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Abstract/IUserService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Concrete/CategoryManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Concrete/OrderManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Concrete/ProductManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.Business/Concrete/UserManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ETicaretAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ETicaretAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/ETicaretContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/Context/ETicaretContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/Concrete/Mapping/BaseMap/BaseMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/Mapping/BaseMap/BaseMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/Concrete/Mapping/CategoryMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/Mapping/CategoryMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/Concrete/Mapping/OrderDetailMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/Mapping/OrderDetailMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/Concrete/Mapping/OrderMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/Mapping/OrderMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/Concrete/Mapping/ProductMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/Mapping/ProductMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/Concrete/Mapping/UserMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/Concrete/EntityFramework/Mapping/UserMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/ETicaret.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/ETicaret.DAL.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ETicaretAPI/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ETicaretAPI/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ETicaretAPI/xs/project-cache/ETicaret.DAL-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ETicaretAPI/xs/project-cache/ETicaret.DAL-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ETicaretAPI/xs/project-cache/ETicaretAPI.Entity-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ETicaretAPI/xs/project-cache/ETicaretAPI.Entity-Debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/ETicaret.DAL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/ETicaret.DAL.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/ETicaretAPI.Entity.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/ETicaretAPI.Entity.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,29 +54,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/salihcancakar/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/salihcancakar/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
-      &quot;/Users/salihcancakar/.local/share/Symbols/src&quot;
+    "rider.external.source.directories": [
+      "/Users/salihcancakar/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
+      "/Users/salihcancakar/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
+      "/Users/salihcancakar/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -84,8 +90,19 @@
       <workItem from="1687886254682" duration="21303000" />
       <workItem from="1688347412528" duration="7167000" />
       <workItem from="1688566948897" duration="1619000" />
-      <workItem from="1688691159200" duration="16763000" />
+      <workItem from="1688691159200" duration="18059000" />
+      <workItem from="1689975494944" duration="4005000" />
+      <workItem from="1690750878672" duration="7469000" />
     </task>
+    <task id="LOCAL-00001" summary="DB CRUD">
+      <option name="closed" value="true" />
+      <created>1689572295210</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689572295210</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +111,11 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="DB CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB CRUD" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

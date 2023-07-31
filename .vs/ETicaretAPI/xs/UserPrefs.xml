@@ -1,13 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="ETicaret.DAL/Abstract/DataManagement/IRepository.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ETicaret.Business/Abstract/IUserService.cs">
     <Files>
       <File FileName="ETicaret.DAL/Abstract/DataManagement/IRepository.cs" Line="3" Column="46" />
+      <File FileName="ETicaret.Business/Abstract/IUserService.cs" Line="2" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ETicaretAPI" expanded="True">
-            <Node name="ETicaret.DAL" expanded="True" selected="True">
+            <Node name="ETicaret.Business" expanded="True" selected="True">
+              <Node name="Abstract" expanded="True" />
+            </Node>
+            <Node name="ETicaret.DAL" expanded="True">
               <Node name="Abstract" expanded="True">
                 <Node name="DataManagement" expanded="True" />
               </Node>
@@ -18,10 +25,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
