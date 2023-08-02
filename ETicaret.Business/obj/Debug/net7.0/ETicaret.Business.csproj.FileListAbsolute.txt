@@ -1,0 +1,17 @@
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/bin/Debug/net7.0/ETicaret.Business.deps.json
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/bin/Debug/net7.0/ETicaret.Business.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/bin/Debug/net7.0/ETicaret.Business.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/bin/Debug/net7.0/ETicaret.DAL.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/bin/Debug/net7.0/ETicaretAPI.Entity.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/bin/Debug/net7.0/ETicaretAPI.Entity.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/bin/Debug/net7.0/ETicaret.DAL.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.csproj.CopyComplete
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/refint/ETicaret.Business.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/obj/Debug/net7.0/ref/ETicaret.Business.dll

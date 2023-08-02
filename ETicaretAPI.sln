@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.DAL", "ETicaret.DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.Business", "ETicaret.Business\ETicaret.Business.csproj", "{50216107-83F8-4DA9-8AE1-EC329830FC10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.API", "ETicaret.API\ETicaret.API.csproj", "{B2A68A9A-7274-42CB-A247-0EAE473D58C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{50216107-83F8-4DA9-8AE1-EC329830FC10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50216107-83F8-4DA9-8AE1-EC329830FC10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50216107-83F8-4DA9-8AE1-EC329830FC10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A68A9A-7274-42CB-A247-0EAE473D58C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A68A9A-7274-42CB-A247-0EAE473D58C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A68A9A-7274-42CB-A247-0EAE473D58C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A68A9A-7274-42CB-A247-0EAE473D58C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

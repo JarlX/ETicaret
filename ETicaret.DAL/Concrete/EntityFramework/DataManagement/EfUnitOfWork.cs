@@ -16,6 +16,12 @@ public class EfUnitOfWork : IUnitOfWork
     {
         _eTicaretContext = eTicaretContext;
         _httpContextAccessor = httpContextAccessor;
+
+        CategoryRepository = new EfCategoryRepository(_eTicaretContext);
+        UserRepository = new EfUserRepository(_eTicaretContext);
+        OrderRepository = new EfOrderRepository(_eTicaretContext);
+        ProductRepository = new EfProductRepository(_eTicaretContext);
+        OrderDetailRepository = new EfOrderDetailRepository(_eTicaretContext);
     } 
     
     public ICategoryRepository CategoryRepository { get; }
