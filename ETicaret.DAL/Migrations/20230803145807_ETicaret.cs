@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ETicaret.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class m1 : Migration
+    public partial class ETicaret : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -23,10 +23,10 @@ namespace ETicaret.DAL.Migrations
                     IsDeleted = table.Column<bool>(type: "bit", nullable: true),
                     AddedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     AddedUser = table.Column<int>(type: "int", nullable: false),
-                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UpdatedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedUser = table.Column<int>(type: "int", nullable: false),
-                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -45,16 +45,16 @@ namespace ETicaret.DAL.Migrations
                     Password = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    Adress = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     GUID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     IsActive = table.Column<bool>(type: "bit", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: true),
                     AddedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     AddedUser = table.Column<int>(type: "int", nullable: false),
-                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UpdatedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedUser = table.Column<int>(type: "int", nullable: false),
-                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -76,10 +76,10 @@ namespace ETicaret.DAL.Migrations
                     IsDeleted = table.Column<bool>(type: "bit", nullable: true),
                     AddedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     AddedUser = table.Column<int>(type: "int", nullable: false),
-                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UpdatedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedUser = table.Column<int>(type: "int", nullable: false),
-                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -104,10 +104,10 @@ namespace ETicaret.DAL.Migrations
                     IsDeleted = table.Column<bool>(type: "bit", nullable: true),
                     AddedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     AddedUser = table.Column<int>(type: "int", nullable: false),
-                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UpdatedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedUser = table.Column<int>(type: "int", nullable: false),
-                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -136,10 +136,10 @@ namespace ETicaret.DAL.Migrations
                     IsDeleted = table.Column<bool>(type: "bit", nullable: true),
                     AddedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     AddedUser = table.Column<int>(type: "int", nullable: false),
-                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AddedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UpdatedTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedUser = table.Column<int>(type: "int", nullable: false),
-                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    UpdatedIPV4Address = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

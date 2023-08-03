@@ -22,6 +22,22 @@ public class CategoryController : Controller
     public async Task<IActionResult> AddCategory(Category category)
     {
         await _categoryService.AddSync(category);
-        return Ok("İşlem Başarılı");
+        return Ok(category);
+    }
+
+    [HttpGet("/Categories")]
+    public async Task<IActionResult> GetCategories()
+    {
+        var categories = await _categoryService.GetAllAsync();
+
+        return Ok(categories.ToList());
+    }
+
+    [HttpGet("/Category/{id}")]
+    public async Task<IActionResult> GetCategoryByID(int id)
+    {
+        var category = await _categoryService.GetAsync(q => q.ID == id);
+
+        return category != null ? Ok(category) : Ok("İşlem Başarısız");
     }
 }

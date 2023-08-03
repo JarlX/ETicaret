@@ -1,13 +1,7 @@
-using ETicaretAPI.Entity.Base;
+namespace ETicaretAPI.Entity.DTO;
 
-namespace ETicaretAPI.Entity;
-
-public class User : AuditableEntity
+public class UserDTOBase : BaseDTO
 {
-    public User()
-    {
-        this.Orders = new HashSet<Order>();
-    }
     public string FirstName { get; set; }
 
     public string LastName { get; set; }
@@ -21,6 +15,5 @@ public class User : AuditableEntity
     public string PhoneNumber { get; set; }
 
     public string Address { get; set; }
-
-    public virtual IEnumerable<Order> Orders { get; set; }
+    
 }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ETicaret.DAL.Migrations
 {
     [DbContext(typeof(ETicaretContext))]
-    [Migration("20230705025954_m1")]
-    partial class m1
+    [Migration("20230803145807_ETicaret")]
+    partial class ETicaret
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,7 +34,6 @@ namespace ETicaret.DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("AddedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("AddedTime")
@@ -58,7 +57,6 @@ namespace ETicaret.DAL.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("UpdatedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedTime")
@@ -81,7 +79,6 @@ namespace ETicaret.DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("AddedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("AddedTime")
@@ -100,7 +97,6 @@ namespace ETicaret.DAL.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("UpdatedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedTime")
@@ -128,7 +124,6 @@ namespace ETicaret.DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("AddedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("AddedTime")
@@ -162,7 +157,6 @@ namespace ETicaret.DAL.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("UpdatedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedTime")
@@ -187,7 +181,6 @@ namespace ETicaret.DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("AddedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("AddedTime")
@@ -222,7 +215,6 @@ namespace ETicaret.DAL.Migrations
                         .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("UpdatedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedTime")
@@ -247,7 +239,6 @@ namespace ETicaret.DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("AddedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("AddedTime")
@@ -256,7 +247,7 @@ namespace ETicaret.DAL.Migrations
                     b.Property<int>("AddedUser")
                         .HasColumnType("int");
 
-                    b.Property<string>("Adress")
+                    b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -295,7 +286,6 @@ namespace ETicaret.DAL.Migrations
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("UpdatedIPV4Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedTime")

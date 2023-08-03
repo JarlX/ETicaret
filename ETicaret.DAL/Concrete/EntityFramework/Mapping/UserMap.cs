@@ -16,6 +16,6 @@ public class UserMap : BaseMap<User>
         builder.Property(q => q.Password).HasMaxLength(50).IsRequired();
         builder.Property(q => q.Email).HasMaxLength(100).IsRequired();
         builder.Property(q => q.PhoneNumber).HasMaxLength(20).IsRequired();
-        builder.Property(q => q.Adress).IsRequired();
+        builder.Property(q => q.Address).IsRequired();
     }
 }
