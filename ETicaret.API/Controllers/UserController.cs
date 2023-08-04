@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ETicaret.API.Controllers;
 
+using System.Net;
 using Business.Abstract;
 using ETicaretAPI.Entity;
 using ETicaretAPI.Entity.DTO;
+using ETicaretAPI.Entity.Result;
 
 [ApiController]
 [Route("ETicaret/[action]")]
@@ -19,6 +21,7 @@ public class UserController : Controller
     }
 
     [HttpPost("/AddUser")]
+    [ProducesResponseType(typeof(Sonuc<UserDTOResponse>),(int)HttpStatusCode.OK)]
      public async Task<IActionResult> AddUser(UserDTORequest userDtoRequest)
      {
          User user = new User()
@@ -46,10 +49,11 @@ public class UserController : Controller
              Address = user.Address,
          };
 
-         return Ok(userDtoResponse);
+         return Ok(new Sonuc<UserDTOResponse>(userDtoResponse,"İşlem Başarılı",(int)HttpStatusCode.OK,null!));
      }
 
      [HttpGet("/User/{guid}")]
+     [ProducesResponseType(typeof(Sonuc<UserDTOResponse>),(int)HttpStatusCode.OK)]
      public async Task<IActionResult> GetUser(Guid guid)
      {
         var user =  await _userService.GetAsync(q => q.GUID == guid);
@@ -68,11 +72,15 @@ public class UserController : Controller
                 Address = user.Address,
             };
 
-            return Ok(userDtoResponse);
+            return Ok(new Sonuc<UserDTOResponse>(userDtoResponse,"İşlem Başarılı",(int)HttpStatusCode.OK,null!));
         }
         else
         {
-            return NotFound("Sonuç Bulunamadı");
+            return NotFound(new Sonuc<UserDTOResponse>(null,"İşlem Başarılı",(int)HttpStatusCode.NotFound,new HataBilgisi()
+            {
+                Hata=null!,
+                HataAciklama = "Sonuç Bulunamadı",
+            }));
         }
         
      }
