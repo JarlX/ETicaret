@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Cr3Mf7RUFmSviTkEi3OAP4WjujN5MOCUhrkBRAWn334+gVstOoRIbGiA5zMgZZrapYRZfCWyfEih2W0DLqo+WQ==",
+  "dgSpecHash": "Wtl5B4XLBwobuwNUwMyUWkUdu5FOfZOL76xGF1lketi3ftJearWRqL2Jqey4fc+X34RDr15UTgJKSZKxWHhmfQ==",
   "success": true,
   "projectFilePath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/ETicaret.API.csproj",
   "expectedPackageFiles": [
     "/Users/salihcancakar/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/salihcancakar/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.9/microsoft.aspnetcore.authentication.jwtbearer.7.0.9.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/microsoft.aspnetcore.http.extensions/2.2.0/microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "/Users/salihcancakar/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

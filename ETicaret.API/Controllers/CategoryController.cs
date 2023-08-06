@@ -37,7 +37,7 @@ public class CategoryController : Controller
             Guid = categoryDtoRequest.Guid,
             CategoryName = categoryDtoRequest.CategoryName
         };
-        return Ok(new Sonuc<CategoryDTOResponse>(categoryDtoResponse,"İşlem Başarılı",(int)HttpStatusCode.OK,null));
+        return Ok(Sonuc<CategoryDTOResponse>.SuccessWithData(categoryDtoResponse));
     }
 
     [HttpGet("/Categories")]
@@ -60,24 +60,42 @@ public class CategoryController : Controller
                 });   
             }
 
-            return Ok(new Sonuc<List<CategoryDTOResponse>>(categoryDtoResponseList,"İşlem Başarılı",(int)HttpStatusCode.OK,null));
+            return Ok(Sonuc<List<CategoryDTOResponse>>.SuccessWithData(categoryDtoResponseList));
         }
         else
         {
-            return NotFound(new Sonuc<List<CategoryDTOResponse>>(null, "Sonuç Bulunamadı", (int)HttpStatusCode.NotFound,
-                new HataBilgisi()
-                {
-                    Hata = null,
-                    HataAciklama = "Sonuç Bulunamadı"
-                }));
+            return NotFound(Sonuc<List<CategoryDTOResponse>>.SuccessDataNotFound()); 
         }
 
     }
 
-    [HttpGet("/Category/{guid}")]
+    [HttpGet("/Category/{id:int}")]
     [ProducesResponseType(typeof(Sonuc<CategoryDTOResponse>),(int)HttpStatusCode.OK)]
-    public async Task<IActionResult> GetCategoryByID(Guid guid)
+    public async Task<IActionResult> GetCategoryByID(int id)
     
+    {
+        var category = await _categoryService.GetAsync(q => q.ID == id);
+
+        if (category != null)
+        {
+            CategoryDTOResponse categoryDtoResponse = new CategoryDTOResponse()
+            {
+                CategoryName = category.CategoryName,
+                Guid = category.GUID
+            };
+
+            return Ok(Sonuc<CategoryDTOResponse>.SuccessWithData(categoryDtoResponse));
+        }
+        else
+        {
+            return NotFound(Sonuc<CategoryDTOResponse>.SuccessDataNotFound());
+        }
+    }
+
+    [HttpGet("/Category/{guid:guid}")]
+    [ProducesResponseType(typeof(Sonuc<CategoryDTOResponse>), (int)HttpStatusCode.OK)]
+
+    public async Task<IActionResult> GetCategoryByGUID(Guid guid)
     {
         var category = await _categoryService.GetAsync(q => q.GUID == guid);
 
@@ -89,16 +107,23 @@ public class CategoryController : Controller
                 Guid = category.GUID
             };
 
-            return Ok(new Sonuc<CategoryDTOResponse>(categoryDtoResponse, "İşlem Başarılı", (int)HttpStatusCode.OK,
-                null));
+            return Ok(Sonuc<CategoryDTOResponse>.SuccessWithData(categoryDtoResponse));
         }
         else
         {
-            return NotFound(new Sonuc<CategoryDTOResponse>(null, "Sonuç Bulunamadı", (int)HttpStatusCode.NotFound,new HataBilgisi()
-            {
-                Hata = null,
-                HataAciklama = "Sonuç Bulunamadı"
-            }));
+            return NotFound(Sonuc<CategoryDTOResponse>.SuccessDataNotFound());
         }
+    }
+
+    [HttpPut("/UpdateCategory")]
+    public async Task<IActionResult> UpdateCategory(CategoryDTORequest categoryDtoRequest)
+    {
+        Category category = await _categoryService.GetAsync(q => q.GUID == categoryDtoRequest.Guid);
+
+        category.CategoryName = categoryDtoRequest.CategoryName;
+
+        await _categoryService.UpdateAsync(category);
+
+        return Ok(Sonuc<CategoryDTOResponse>.SuccessWithoutData(message:"Kategori Başarıyla Güncellendi"));
     }
 }

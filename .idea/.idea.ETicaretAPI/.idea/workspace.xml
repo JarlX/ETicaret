@@ -10,14 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41fad47a-77fa-4532-8fdc-ef80b94020f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Category/CategoryDTOBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Category/CategoryDTORequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Category/CategoryDTOResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/Result/HataBilgisi.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/Result/Sonuc.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaret.API/Controllers/LoginController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Login/LoginDTOBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Login/LoginDTORequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Login/LoginDTOResponse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ETicaretAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ETicaretAPI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/Controllers/CategoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.API/ETicaret.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/ETicaret.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaret.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaret.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaret.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaret.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaret.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaret.Business.dll" afterDir="false" />
@@ -26,11 +28,17 @@
       <change beforePath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaret.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaret.DAL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaretAPI.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaretAPI.Entity.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaretAPI.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/bin/Debug/net7.0/ETicaretAPI.Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ETicaret.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ETicaret.API.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ETicaret.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ETicaret.API.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ETicaret.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ETicaret.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ETicaret.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ETicaret.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ref/ETicaret.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/ref/ETicaret.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/refint/ETicaret.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/Debug/net7.0/refint/ETicaret.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/ETicaret.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/ETicaret.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.API/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.Business/bin/Debug/net7.0/ETicaret.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.Business/bin/Debug/net7.0/ETicaret.Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.Business/bin/Debug/net7.0/ETicaret.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.Business/bin/Debug/net7.0/ETicaret.Business.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.Business/bin/Debug/net7.0/ETicaret.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.Business/bin/Debug/net7.0/ETicaret.DAL.dll" afterDir="false" />
@@ -40,6 +48,7 @@
       <change beforePath="$PROJECT_DIR$/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.Business/obj/Debug/net7.0/ETicaret.Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.Business/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.Business/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/bin/Debug/net7.0/ETicaret.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/bin/Debug/net7.0/ETicaret.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/bin/Debug/net7.0/ETicaret.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/bin/Debug/net7.0/ETicaret.DAL.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/bin/Debug/net7.0/ETicaretAPI.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/bin/Debug/net7.0/ETicaretAPI.Entity.dll" afterDir="false" />
@@ -47,13 +56,19 @@
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/Debug/net7.0/ETicaret.DAL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaret.DAL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaret.DAL/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Category/CategoryDTOBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Category/CategoryDTOBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Category/CategoryDTORequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Category/CategoryDTORequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Category/CategoryDTOResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/DTO/Category/CategoryDTOResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/Result/HataBilgisi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/Result/HataBilgisi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/Result/Sonuc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/Result/Sonuc.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/bin/Debug/net7.0/ETicaretAPI.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/bin/Debug/net7.0/ETicaretAPI.Entity.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/bin/Debug/net7.0/ETicaretAPI.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/bin/Debug/net7.0/ETicaretAPI.Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ETicaretAPI.Entity.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ref/ETicaretAPI.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/ref/ETicaretAPI.Entity.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/refint/ETicaretAPI.Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/Debug/net7.0/refint/ETicaretAPI.Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ETicaretAPI.Entity/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +200,7 @@
       <workItem from="1688566948897" duration="1619000" />
       <workItem from="1688691159200" duration="18059000" />
       <workItem from="1689975494944" duration="4005000" />
-      <workItem from="1690750878672" duration="41958000" />
+      <workItem from="1690750878672" duration="59184000" />
     </task>
     <task id="LOCAL-00001" summary="DB CRUD">
       <option name="closed" value="true" />
@@ -206,6 +221,38 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="DB CRUD" />
     <option name="LAST_COMMIT_MESSAGE" value="DB CRUD" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ETicaret.API/Controllers/CategoryController.cs</url>
+          <line>75</line>
+          <properties documentPath="$PROJECT_DIR$/ETicaret.API/Controllers/CategoryController.cs" initialLine="75" containingFunctionPresentation="Method 'GetCategoryByID'">
+            <startOffsets>
+              <option value="2279" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2280" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ETicaret.API/Controllers/CategoryController.cs</url>
+          <line>119</line>
+          <properties documentPath="$PROJECT_DIR$/ETicaret.API/Controllers/CategoryController.cs" initialLine="121" containingFunctionPresentation="Method 'UpdateCategory'">
+            <startOffsets>
+              <option value="3676" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3677" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

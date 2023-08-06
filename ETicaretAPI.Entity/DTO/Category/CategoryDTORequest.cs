@@ -1,6 +1,7 @@
 namespace ETicaretAPI.Entity.DTO.Category;
 
-public class CategoryDTORequest : CategoryDTOResponse
+using System.Text.Json.Serialization;
+
+public class CategoryDTORequest : CategoryDTOBase
 {
-    
 }

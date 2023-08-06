@@ -3,6 +3,7 @@ using ETicaret.Business.Concrete;
 using ETicaret.DAL.Abstract.DataManagement;
 using ETicaret.DAL.Concrete.EntityFramework;
 using ETicaret.DAL.Concrete.EntityFramework.DataManagement;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,7 @@ builder.Services.AddDbContext<ETicaretContext>();
 builder.Services.AddScoped<IUnitOfWork, EfUnitOfWork>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<IUserService, UserManager>();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 
 var app = builder.Build();
 

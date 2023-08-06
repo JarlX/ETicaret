@@ -49,7 +49,7 @@ public class UserController : Controller
              Address = user.Address,
          };
 
-         return Ok(new Sonuc<UserDTOResponse>(userDtoResponse,"İşlem Başarılı",(int)HttpStatusCode.OK,null!));
+         return Ok(Sonuc<UserDTOResponse>.SuccessWithData(userDtoResponse));
      }
 
      [HttpGet("/User/{guid}")]
@@ -72,15 +72,11 @@ public class UserController : Controller
                 Address = user.Address,
             };
 
-            return Ok(new Sonuc<UserDTOResponse>(userDtoResponse,"İşlem Başarılı",(int)HttpStatusCode.OK,null!));
+            return Ok(Sonuc<UserDTOResponse>.SuccessWithData(userDtoResponse));
         }
         else
         {
-            return NotFound(new Sonuc<UserDTOResponse>(null,"İşlem Başarılı",(int)HttpStatusCode.NotFound,new HataBilgisi()
-            {
-                Hata=null!,
-                HataAciklama = "Sonuç Bulunamadı",
-            }));
+            return NotFound(Sonuc<UserDTOResponse>.SuccessDataNotFound());
         }
         
      }
