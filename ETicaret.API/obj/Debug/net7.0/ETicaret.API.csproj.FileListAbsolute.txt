@@ -75,3 +75,4 @@
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaretAPI.Entity.pdb
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.DAL.pdb
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Business.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

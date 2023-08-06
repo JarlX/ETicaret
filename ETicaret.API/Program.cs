@@ -1,3 +1,4 @@
+using ETicaret.API.Middleware;
 using ETicaret.Business.Abstract;
 using ETicaret.Business.Concrete;
 using ETicaret.DAL.Abstract.DataManagement;
@@ -31,6 +32,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.APIAuthorizationMiddleware();
 
 app.UseHttpsRedirection();
 
