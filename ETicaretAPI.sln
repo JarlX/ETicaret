@@ -1,12 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaretAPI.Entity", "ETicaretAPI.Entity\ETicaretAPI.Entity.csproj", "{11A92C71-8AF1-441F-A324-C4D3881DB5BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.Entity", "ETicaret.Entity\ETicaret.Entity.csproj", "{11A92C71-8AF1-441F-A324-C4D3881DB5BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.DAL", "ETicaret.DAL\ETicaret.DAL.csproj", "{88DAB8CA-5BDF-4D66-A2C7-81E2D59B5B75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.Business", "ETicaret.Business\ETicaret.Business.csproj", "{50216107-83F8-4DA9-8AE1-EC329830FC10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.API", "ETicaret.API\ETicaret.API.csproj", "{B2A68A9A-7274-42CB-A247-0EAE473D58C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETicaret.Helper", "ETicaret.Helper\ETicaret.Helper.csproj", "{025524CC-5E99-4401-86FA-0E8765E7655A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +32,9 @@ Global
 		{B2A68A9A-7274-42CB-A247-0EAE473D58C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2A68A9A-7274-42CB-A247-0EAE473D58C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2A68A9A-7274-42CB-A247-0EAE473D58C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{025524CC-5E99-4401-86FA-0E8765E7655A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{025524CC-5E99-4401-86FA-0E8765E7655A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{025524CC-5E99-4401-86FA-0E8765E7655A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{025524CC-5E99-4401-86FA-0E8765E7655A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

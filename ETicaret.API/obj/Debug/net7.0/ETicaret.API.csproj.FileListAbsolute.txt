@@ -71,8 +71,10 @@
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Business.dll
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.DAL.dll
-/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaretAPI.Entity.dll
-/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaretAPI.Entity.pdb
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.DAL.pdb
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Business.pdb
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Entity.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Entity.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Helper.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Helper.pdb

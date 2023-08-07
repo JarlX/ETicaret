@@ -4,9 +4,9 @@ namespace ETicaret.API.Controllers;
 
 using System.Net;
 using Business.Abstract;
-using ETicaretAPI.Entity;
-using ETicaretAPI.Entity.DTO.Category;
-using ETicaretAPI.Entity.Result;
+using Entity;
+using Entity.DTO.Category;
+using Entity.Result;
 
 [ApiController]
 [Route("/ETicaret/[action]")]
@@ -25,6 +25,10 @@ public class CategoryController : Controller
     [ProducesResponseType(typeof(Sonuc<CategoryDTOResponse>),(int)HttpStatusCode.OK)]
     public async Task<IActionResult> AddCategory(CategoryDTORequest categoryDtoRequest)
     {
+        if (string.IsNullOrEmpty(categoryDtoRequest.CategoryName.Trim()))
+        {
+            return BadRequest(Sonuc<CategoryDTOResponse>.FieldValidationError());
+        }
         Category category = new Category()
         {
             CategoryName = categoryDtoRequest.CategoryName
@@ -34,8 +38,8 @@ public class CategoryController : Controller
 
         CategoryDTOResponse categoryDtoResponse = new CategoryDTOResponse()
         {
-            Guid = categoryDtoRequest.Guid,
-            CategoryName = categoryDtoRequest.CategoryName
+            Guid = category.GUID,
+            CategoryName = category.CategoryName
         };
         return Ok(Sonuc<CategoryDTOResponse>.SuccessWithData(categoryDtoResponse));
     }
@@ -116,11 +120,14 @@ public class CategoryController : Controller
     }
 
     [HttpPut("/UpdateCategory")]
-    public async Task<IActionResult> UpdateCategory(CategoryDTORequest categoryDtoRequest)
+    public async Task<IActionResult> UpdateCategory(CategoryUpdateDTORequest categoryUpdateDtoRequest)
     {
-        Category category = await _categoryService.GetAsync(q => q.GUID == categoryDtoRequest.Guid);
+        Category category = await _categoryService.GetAsync(q => q.GUID == categoryUpdateDtoRequest.Guid);
 
-        category.CategoryName = categoryDtoRequest.CategoryName;
+        category.CategoryName = categoryUpdateDtoRequest.CategoryName;
+        category.IsActive = categoryUpdateDtoRequest.IsActive != null
+            ? categoryUpdateDtoRequest.IsActive
+            : category.IsActive;
 
         await _categoryService.UpdateAsync(category);
 

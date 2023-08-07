@@ -25,7 +25,7 @@ namespace ETicaret.DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ETicaretAPI.Entity.Category", b =>
+            modelBuilder.Entity("ETicaret.Entity.Category", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -70,7 +70,7 @@ namespace ETicaret.DAL.Migrations
                     b.ToTable("Category", (string)null);
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.Order", b =>
+            modelBuilder.Entity("ETicaret.Entity.Order", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -115,7 +115,7 @@ namespace ETicaret.DAL.Migrations
                     b.ToTable("Order", (string)null);
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.OrderDetail", b =>
+            modelBuilder.Entity("ETicaret.Entity.OrderDetail", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -172,7 +172,7 @@ namespace ETicaret.DAL.Migrations
                     b.ToTable("OrderDetail", (string)null);
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.Product", b =>
+            modelBuilder.Entity("ETicaret.Entity.Product", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -230,7 +230,7 @@ namespace ETicaret.DAL.Migrations
                     b.ToTable("Product", (string)null);
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.User", b =>
+            modelBuilder.Entity("ETicaret.Entity.User", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -304,9 +304,9 @@ namespace ETicaret.DAL.Migrations
                     b.ToTable("User", (string)null);
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.Order", b =>
+            modelBuilder.Entity("ETicaret.Entity.Order", b =>
                 {
-                    b.HasOne("ETicaretAPI.Entity.User", "User")
+                    b.HasOne("ETicaret.Entity.User", "User")
                         .WithMany("Orders")
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -315,15 +315,15 @@ namespace ETicaret.DAL.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.OrderDetail", b =>
+            modelBuilder.Entity("ETicaret.Entity.OrderDetail", b =>
                 {
-                    b.HasOne("ETicaretAPI.Entity.Order", "Order")
+                    b.HasOne("ETicaret.Entity.Order", "Order")
                         .WithMany("OrderDetails")
                         .HasForeignKey("OrderID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ETicaretAPI.Entity.Product", "Product")
+                    b.HasOne("ETicaret.Entity.Product", "Product")
                         .WithMany("OrderDetails")
                         .HasForeignKey("OrderID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -334,9 +334,9 @@ namespace ETicaret.DAL.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.Product", b =>
+            modelBuilder.Entity("ETicaret.Entity.Product", b =>
                 {
-                    b.HasOne("ETicaretAPI.Entity.Category", "Category")
+                    b.HasOne("ETicaret.Entity.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -345,22 +345,22 @@ namespace ETicaret.DAL.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.Category", b =>
+            modelBuilder.Entity("ETicaret.Entity.Category", b =>
                 {
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.Order", b =>
+            modelBuilder.Entity("ETicaret.Entity.Order", b =>
                 {
                     b.Navigation("OrderDetails");
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.Product", b =>
+            modelBuilder.Entity("ETicaret.Entity.Product", b =>
                 {
                     b.Navigation("OrderDetails");
                 });
 
-            modelBuilder.Entity("ETicaretAPI.Entity.User", b =>
+            modelBuilder.Entity("ETicaret.Entity.User", b =>
                 {
                     b.Navigation("Orders");
                 });

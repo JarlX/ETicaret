@@ -4,6 +4,7 @@ using ETicaret.Business.Concrete;
 using ETicaret.DAL.Abstract.DataManagement;
 using ETicaret.DAL.Concrete.EntityFramework;
 using ETicaret.DAL.Concrete.EntityFramework.DataManagement;
+using ETicaret.Helper.Globals;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +25,8 @@ builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<IUserService, UserManager>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 
+
+builder.Services.Configure<JWTExceptURLList>(builder.Configuration.GetSection(nameof(JWTExceptURLList)));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

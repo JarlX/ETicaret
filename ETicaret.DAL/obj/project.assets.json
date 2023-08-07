@@ -1206,17 +1206,17 @@
           }
         }
       },
-      "ETicaretAPI.Entity/1.0.0": {
+      "ETicaret.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.7"
         },
         "compile": {
-          "bin/placeholder/ETicaretAPI.Entity.dll": {}
+          "bin/placeholder/ETicaret.Entity.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ETicaretAPI.Entity.dll": {}
+          "bin/placeholder/ETicaret.Entity.dll": {}
         }
       }
     }
@@ -3579,15 +3579,15 @@
         "version.txt"
       ]
     },
-    "ETicaretAPI.Entity/1.0.0": {
+    "ETicaret.Entity/1.0.0": {
       "type": "project",
-      "path": "../ETicaretAPI.Entity/ETicaretAPI.Entity.csproj",
-      "msbuildProject": "../ETicaretAPI.Entity/ETicaretAPI.Entity.csproj"
+      "path": "../ETicaret.Entity/ETicaret.Entity.csproj",
+      "msbuildProject": "../ETicaret.Entity/ETicaret.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "ETicaretAPI.Entity >= 1.0.0",
+      "ETicaret.Entity >= 1.0.0",
       "Microsoft.AspNetCore.Http.Extensions >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Abstractions >= 7.0.7",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.7",
@@ -3620,8 +3620,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj": {
-              "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj"
+            "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj": {
+              "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj"
             }
           }
         }

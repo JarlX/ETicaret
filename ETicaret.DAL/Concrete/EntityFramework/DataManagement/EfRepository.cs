@@ -2,7 +2,7 @@ namespace ETicaret.DAL.Concrete.EntityFramework.DataManagement;
 
 using System.Linq.Expressions;
 using Abstract.DataManagement;
-using ETicaretAPI.Entity.Base;
+using Entity.Base;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 

@@ -8,8 +8,8 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using Business.Abstract;
-using ETicaretAPI.Entity.DTO.Login;
-using ETicaretAPI.Entity.Result;
+using Entity.DTO.Login;
+using Entity.Result;
 using Microsoft.IdentityModel.Tokens;
 
 [ApiController]

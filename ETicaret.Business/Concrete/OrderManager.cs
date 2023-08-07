@@ -3,7 +3,7 @@ namespace ETicaret.Business.Concrete;
 using System.Linq.Expressions;
 using Abstract;
 using DAL.Abstract.DataManagement;
-using ETicaretAPI.Entity;
+using Entity;
 
 public class OrderManager : IOrderService
 {

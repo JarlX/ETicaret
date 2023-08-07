@@ -2,7 +2,7 @@ namespace ETicaret.DAL.Concrete.EntityFramework.DataManagement;
 
 using Abstract;
 using Abstract.DataManagement;
-using ETicaretAPI.Entity.Base;
+using Entity.Base;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 

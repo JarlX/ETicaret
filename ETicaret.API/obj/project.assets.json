@@ -1243,7 +1243,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "ETicaret.DAL": "1.0.0",
-          "ETicaretAPI.Entity": "1.0.0"
+          "ETicaret.Entity": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ETicaret.Business.dll": {}
@@ -1256,7 +1256,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "ETicaretAPI.Entity": "1.0.0",
+          "ETicaret.Entity": "1.0.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.7"
@@ -1268,17 +1268,27 @@
           "bin/placeholder/ETicaret.DAL.dll": {}
         }
       },
-      "ETicaretAPI.Entity/1.0.0": {
+      "ETicaret.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.7"
         },
         "compile": {
-          "bin/placeholder/ETicaretAPI.Entity.dll": {}
+          "bin/placeholder/ETicaret.Entity.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ETicaretAPI.Entity.dll": {}
+          "bin/placeholder/ETicaret.Entity.dll": {}
+        }
+      },
+      "ETicaret.Helper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ETicaret.Helper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ETicaret.Helper.dll": {}
         }
       }
     }
@@ -3865,16 +3875,22 @@
       "path": "../ETicaret.DAL/ETicaret.DAL.csproj",
       "msbuildProject": "../ETicaret.DAL/ETicaret.DAL.csproj"
     },
-    "ETicaretAPI.Entity/1.0.0": {
+    "ETicaret.Entity/1.0.0": {
       "type": "project",
-      "path": "../ETicaretAPI.Entity/ETicaretAPI.Entity.csproj",
-      "msbuildProject": "../ETicaretAPI.Entity/ETicaretAPI.Entity.csproj"
+      "path": "../ETicaret.Entity/ETicaret.Entity.csproj",
+      "msbuildProject": "../ETicaret.Entity/ETicaret.Entity.csproj"
+    },
+    "ETicaret.Helper/1.0.0": {
+      "type": "project",
+      "path": "../ETicaret.Helper/ETicaret.Helper.csproj",
+      "msbuildProject": "../ETicaret.Helper/ETicaret.Helper.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "ETicaret.Business >= 1.0.0",
-      "ETicaretAPI.Entity >= 1.0.0",
+      "ETicaret.Entity >= 1.0.0",
+      "ETicaret.Helper >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.9",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
@@ -3911,8 +3927,11 @@
             "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/ETicaret.Business.csproj": {
               "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Business/ETicaret.Business.csproj"
             },
-            "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj": {
-              "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj"
+            "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj": {
+              "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj"
+            },
+            "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Helper/ETicaret.Helper.csproj": {
+              "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Helper/ETicaret.Helper.csproj"
             }
           }
         }

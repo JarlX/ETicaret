@@ -1,5 +1,5 @@
 using System.Linq.Expressions;
-using ETicaretAPI.Entity.Base;
+using ETicaret.Entity.Base;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace ETicaret.DAL.Abstract.DataManagement;

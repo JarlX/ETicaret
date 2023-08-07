@@ -1,5 +1,5 @@
 using ETicaret.DAL.Abstract.DataManagement;
-using ETicaretAPI.Entity;
+using ETicaret.Entity;
 
 namespace ETicaret.DAL.Abstract;
 

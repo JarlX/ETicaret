@@ -9,7 +9,7 @@
       "ETicaret.Business/1.0.0": {
         "dependencies": {
           "ETicaret.DAL": "1.0.0",
-          "ETicaretAPI.Entity": "1.0.0"
+          "ETicaret.Entity": "1.0.0"
         },
         "runtime": {
           "ETicaret.Business.dll": {}
@@ -669,7 +669,7 @@
       },
       "ETicaret.DAL/1.0.0": {
         "dependencies": {
-          "ETicaretAPI.Entity": "1.0.0",
+          "ETicaret.Entity": "1.0.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.7"
@@ -678,12 +678,12 @@
           "ETicaret.DAL.dll": {}
         }
       },
-      "ETicaretAPI.Entity/1.0.0": {
+      "ETicaret.Entity/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.7"
         },
         "runtime": {
-          "ETicaretAPI.Entity.dll": {}
+          "ETicaret.Entity.dll": {}
         }
       }
     }
@@ -1161,7 +1161,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ETicaretAPI.Entity/1.0.0": {
+    "ETicaret.Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

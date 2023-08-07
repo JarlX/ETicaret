@@ -30,8 +30,8 @@
               "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/ETicaret.DAL.csproj": {
                 "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.DAL/ETicaret.DAL.csproj"
               },
-              "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj": {
-                "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj"
+              "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj": {
+                "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj"
               }
             }
           }
@@ -88,8 +88,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj": {
-                "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj"
+              "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj": {
+                "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj"
               }
             }
           }
@@ -143,14 +143,14 @@
         }
       }
     },
-    "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj": {
+    "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj",
-        "projectName": "ETicaretAPI.Entity",
-        "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/ETicaretAPI.Entity.csproj",
+        "projectUniqueName": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj",
+        "projectName": "ETicaret.Entity",
+        "projectPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/ETicaret.Entity.csproj",
         "packagesPath": "/Users/salihcancakar/.nuget/packages/",
-        "outputPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaretAPI.Entity/obj/",
+        "outputPath": "/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.Entity/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/salihcancakar/.nuget/NuGet/NuGet.Config"

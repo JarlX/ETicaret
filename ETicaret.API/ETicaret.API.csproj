@@ -23,10 +23,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ETicaretAPI.Entity\ETicaretAPI.Entity.csproj" />
+      <ProjectReference Include="..\ETicaret.Entity\ETicaret.Entity.csproj" />
       <ProjectReference Include="..\ETicaret.Business\ETicaret.Business.csproj">
         <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
       </ProjectReference>
+      <ProjectReference Include="..\ETicaret.Helper\ETicaret.Helper.csproj" />
     </ItemGroup>
 
     <ItemGroup>

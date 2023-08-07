@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "ETicaret.DAL/1.0.0": {
         "dependencies": {
-          "ETicaretAPI.Entity": "1.0.0",
+          "ETicaret.Entity": "1.0.0",
           "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.7",
           "Microsoft.EntityFrameworkCore.Design": "7.0.7",
@@ -727,12 +727,12 @@
           }
         }
       },
-      "ETicaretAPI.Entity/1.0.0": {
+      "ETicaret.Entity/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.7"
         },
         "runtime": {
-          "ETicaretAPI.Entity.dll": {}
+          "ETicaret.Entity.dll": {}
         }
       }
     }
@@ -1240,7 +1240,7 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "ETicaretAPI.Entity/1.0.0": {
+    "ETicaret.Entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

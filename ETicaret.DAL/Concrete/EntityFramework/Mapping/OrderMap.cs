@@ -1,7 +1,7 @@
 namespace ETicaret.DAL.Concrete.Mapping;
 
 using BaseMap;
-using ETicaretAPI.Entity;
+using Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

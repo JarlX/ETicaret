@@ -4,9 +4,9 @@ namespace ETicaret.API.Controllers;
 
 using System.Net;
 using Business.Abstract;
-using ETicaretAPI.Entity;
-using ETicaretAPI.Entity.DTO;
-using ETicaretAPI.Entity.Result;
+using Entity;
+using Entity.DTO;
+using Entity.Result;
 
 [ApiController]
 [Route("ETicaret/[action]")]
