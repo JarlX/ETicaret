@@ -1,34 +1,33 @@
 ﻿<Properties StartupConfiguration="{B2A68A9A-7274-42CB-A247-0EAE473D58C0}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ETicaret.API PreferredExecutionTarget="/Applications/Arc.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ETicaret.API/Middleware/APIAuthorizationMiddleware.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ETicaret.API/Middleware/GlobalExceptionMiddleware.cs">
     <Files>
       <File FileName="ETicaret.Business/Concrete/CategoryManager.cs" />
-      <File FileName="ETicaret.API/Controllers/CategoryController.cs" Line="14" Column="28" />
+      <File FileName="ETicaret.API/Controllers/CategoryController.cs" />
       <File FileName="ETicaret.API/Middleware/APIAuthorizationMiddleware.cs" Line="1" Column="1" />
+      <File FileName="ETicaret.API/Middleware/GlobalExceptionMiddleware.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ETicaretAPI">
+          <Node name="ETicaretAPI" expanded="True">
             <Node name="ETicaret.API">
-              <Node name="Controllers" expanded="True" />
               <Node name="Middleware" expanded="True">
-                <Node name="APIAuthorizationMiddleware.cs" selected="True" />
+                <Node name="GlobalExceptionMiddleware.cs" selected="True" />
               </Node>
             </Node>
             <Node name="ETicaret.Business" expanded="True">
               <Node name="Concrete" expanded="True" />
             </Node>
-            <Node name="ETicaretAPI.Entity" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ETicaret.API PreferredExecutionTarget="/Applications/Arc.app" />
 </Properties>

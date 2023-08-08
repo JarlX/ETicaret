@@ -3,10 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace ETicaret.API.Controllers;
 
 using System.Net;
+using AutoMapper;
 using Business.Abstract;
 using Entity;
 using Entity.DTO.Category;
 using Entity.Result;
+using FluentValidation.Results;
+using Validation.FluentValidation;
 
 [ApiController]
 [Route("/ETicaret/[action]")]
@@ -15,33 +18,43 @@ public class CategoryController : Controller
 {
 
 	private readonly ICategoryService _categoryService;
+    private readonly IMapper _mapper;
 
-    public CategoryController(ICategoryService categoryService)
+    public CategoryController(ICategoryService categoryService, IMapper mapper)
     {
         _categoryService = categoryService;
+        _mapper = mapper;
     }
 
     [HttpPost("/AddCategory")]
     [ProducesResponseType(typeof(Sonuc<CategoryDTOResponse>),(int)HttpStatusCode.OK)]
     public async Task<IActionResult> AddCategory(CategoryDTORequest categoryDtoRequest)
     {
-        if (string.IsNullOrEmpty(categoryDtoRequest.CategoryName.Trim()))
+        CategoryValidator categoryValidator = new CategoryValidator();
+        if (categoryValidator.Validate(categoryDtoRequest).IsValid)
         {
-            return BadRequest(Sonuc<CategoryDTOResponse>.FieldValidationError());
-        }
-        Category category = new Category()
-        {
-            CategoryName = categoryDtoRequest.CategoryName
-        };
-        
-        await _categoryService.AddSync(category);
 
-        CategoryDTOResponse categoryDtoResponse = new CategoryDTOResponse()
+            Category category = _mapper.Map<Category>(categoryDtoRequest);
+        
+            await _categoryService.AddSync(category);
+            
+            CategoryDTOResponse categoryDtoResponse = _mapper.Map<CategoryDTOResponse>(category);
+            
+            return Ok(Sonuc<CategoryDTOResponse>.SuccessWithData(categoryDtoResponse));
+        }
+        else
         {
-            Guid = category.GUID,
-            CategoryName = category.CategoryName
-        };
-        return Ok(Sonuc<CategoryDTOResponse>.SuccessWithData(categoryDtoResponse));
+            List<string> validationMessages = new List<string>();
+
+            foreach (var validationFailure in categoryValidator.Validate(categoryDtoRequest).Errors)
+            {
+                validationMessages.Add(validationFailure.ErrorMessage);
+            }
+
+            return BadRequest(Sonuc<CategoryDTOResponse>.FieldValidationError(validationMessages));
+        }
+        
+        
     }
 
     [HttpGet("/Categories")]

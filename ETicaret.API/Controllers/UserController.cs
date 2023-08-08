@@ -3,10 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace ETicaret.API.Controllers;
 
 using System.Net;
+using AutoMapper;
 using Business.Abstract;
 using Entity;
 using Entity.DTO;
 using Entity.Result;
+using Mapping;
+using Validation.FluentValidation;
 
 [ApiController]
 [Route("ETicaret/[action]")]
@@ -14,42 +17,42 @@ public class UserController : Controller
 {
 
     private readonly IUserService _userService;
+    private readonly IMapper _mapper;
 
-    public UserController(IUserService userService)
+    public UserController(IUserService userService, IMapper mapper)
     {
         _userService = userService;
+        _mapper = mapper;
     }
 
     [HttpPost("/AddUser")]
     [ProducesResponseType(typeof(Sonuc<UserDTOResponse>),(int)HttpStatusCode.OK)]
      public async Task<IActionResult> AddUser(UserDTORequest userDtoRequest)
      {
-         User user = new User()
+         UserRegisterValidator userRegisterValidator = new UserRegisterValidator();
+         if (userRegisterValidator.Validate(userDtoRequest).IsValid)
          {
-             FirstName = userDtoRequest.FirstName,
-             LastName = userDtoRequest.LastName,
-             UserName = userDtoRequest.UserName,
-             Password = userDtoRequest.Password,
-             Email = userDtoRequest.Email,
-             PhoneNumber = userDtoRequest.PhoneNumber,
-             Address = userDtoRequest.Address,
-         };
+             User user = _mapper.Map<User>(userDtoRequest);
 
-         await _userService.AddSync(user);
+             await _userService.AddSync(user);
 
-         UserDTOResponse userDtoResponse = new UserDTOResponse()
+             UserDTOResponse userDtoResponse = _mapper.Map<UserDTOResponse>(user);
+
+             return Ok(Sonuc<UserDTOResponse>.SuccessWithData(userDtoResponse));
+         }
+
+         else
          {
-             Guid = user.GUID,
-             FirstName = user.FirstName,
-             LastName = user.LastName,
-             UserName = user.UserName,
-             Password = user.Password,
-             Email = user.Email,
-             PhoneNumber = user.PhoneNumber,
-             Address = user.Address,
-         };
+             List<string> validatorString = new List<string>();
 
-         return Ok(Sonuc<UserDTOResponse>.SuccessWithData(userDtoResponse));
+             foreach (var validationFailure in userRegisterValidator.Validate(userDtoRequest).Errors)
+             {
+                 validatorString.Add(validationFailure.ErrorMessage);
+             }
+
+             return BadRequest(Sonuc<UserDTOResponse>.FieldValidationError(validatorString));
+         }
+         
      }
 
      [HttpGet("/User/{guid}")]

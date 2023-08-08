@@ -78,3 +78,8 @@
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Entity.pdb
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Helper.dll
 /Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/ETicaret.Helper.pdb
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/FluentValidation.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/AutoMapper.dll
+/Users/salihcancakar/Desktop/Ahlatci/ETicaretAPI/ETicaret.API/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -63,8 +63,8 @@ public class Sonuc<T>
         return new Sonuc<T>(message, statusCode, HataBilgisi.AuthenticationError());
     }
 
-    public static Sonuc<T> FieldValidationError(string message = "Hata Oluştu",int statusCode = (int)HttpStatusCode.BadRequest)
+    public static Sonuc<T> FieldValidationError(List<string>? errorMessages = null,string message = "Hata Oluştu",int statusCode = (int)HttpStatusCode.BadRequest)
     {
-        return new Sonuc<T>(message, statusCode, HataBilgisi.FieldValidationError());
+        return new Sonuc<T>(message, statusCode, HataBilgisi.FieldValidationError(errorMessages));
     }
 }
