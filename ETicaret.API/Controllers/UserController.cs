@@ -8,6 +8,7 @@ using Business.Abstract;
 using Entity;
 using Entity.DTO;
 using Entity.Result;
+using Helper.CustomException;
 using Mapping;
 using Validation.FluentValidation;
 
@@ -50,7 +51,9 @@ public class UserController : Controller
                  validatorString.Add(validationFailure.ErrorMessage);
              }
 
-             return BadRequest(Sonuc<UserDTOResponse>.FieldValidationError(validatorString));
+             // return BadRequest(Sonuc<UserDTOResponse>.FieldValidationError(validatorString));
+
+             throw new FieldValidationException(validatorString);
          }
          
      }
@@ -63,17 +66,7 @@ public class UserController : Controller
 
         if (user != null)
         {
-            UserDTOResponse userDtoResponse = new()
-            {
-                Guid = user.GUID,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                UserName = user.UserName,
-                Password = user.Password,
-                Email = user.Email,
-                PhoneNumber = user.PhoneNumber,
-                Address = user.Address,
-            };
+            UserDTOResponse userDtoResponse = _mapper.Map<UserDTOResponse>(user);
 
             return Ok(Sonuc<UserDTOResponse>.SuccessWithData(userDtoResponse));
         }

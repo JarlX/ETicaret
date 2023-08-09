@@ -9,6 +9,7 @@ using Entity;
 using Entity.DTO.Category;
 using Entity.Result;
 using FluentValidation.Results;
+using Helper.CustomException;
 using Validation.FluentValidation;
 
 [ApiController]
@@ -51,7 +52,7 @@ public class CategoryController : Controller
                 validationMessages.Add(validationFailure.ErrorMessage);
             }
 
-            return BadRequest(Sonuc<CategoryDTOResponse>.FieldValidationError(validationMessages));
+            throw new FieldValidationException(validationMessages);
         }
         
         
@@ -70,11 +71,13 @@ public class CategoryController : Controller
             List<CategoryDTOResponse> categoryDtoResponseList = new List<CategoryDTOResponse>();
             foreach (var category in categories)
             {
-                categoryDtoResponseList.Add(new CategoryDTOResponse()
-                {
-                    Guid = category.GUID,
-                    CategoryName = category.CategoryName
-                });   
+                // categoryDtoResponseList.Add(new CategoryDTOResponse()
+                // {
+                //     Guid = category.GUID,
+                //     CategoryName = category.CategoryName
+                // });   
+                
+                categoryDtoResponseList.Add(_mapper.Map<CategoryDTOResponse>(category));
             }
 
             return Ok(Sonuc<List<CategoryDTOResponse>>.SuccessWithData(categoryDtoResponseList));
@@ -118,11 +121,7 @@ public class CategoryController : Controller
 
         if (category != null)
         {
-            CategoryDTOResponse categoryDtoResponse = new CategoryDTOResponse()
-            {
-                CategoryName = category.CategoryName,
-                Guid = category.GUID
-            };
+            CategoryDTOResponse categoryDtoResponse = _mapper.Map<CategoryDTOResponse>(category);
 
             return Ok(Sonuc<CategoryDTOResponse>.SuccessWithData(categoryDtoResponse));
         }

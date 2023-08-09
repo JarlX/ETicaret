@@ -58,13 +58,27 @@ public class Sonuc<T>
         return new Sonuc<T>(message, statusCode,HataBilgisi.NotFound());
     }
 
-    public static Sonuc<T> AuthenticationError(string message = "Kullanıcı Bulunamadı",int statusCode = (int)HttpStatusCode.NotFound)
+    public static Sonuc<T> AuthenticationError(string message = "Kullanıcı Bulunamadı Veya Yanlış Şifre",int statusCode = (int)HttpStatusCode.NotFound)
     {
         return new Sonuc<T>(message, statusCode, HataBilgisi.AuthenticationError());
+    }
+    public static Sonuc<T> TokenNotFoundError(HataBilgisi hataBilgisi, int statusCode = (int)HttpStatusCode.Unauthorized)
+    {
+        return new Sonuc<T>("Hata Oluştu", statusCode, HataBilgisi.TokenNotFoundError());
+    }
+    
+    public static Sonuc<T> TokenError(HataBilgisi hataBilgisi, int statusCode = (int)HttpStatusCode.Unauthorized)
+    {
+        return new Sonuc<T>("Hata Oluştu", statusCode, HataBilgisi.TokenError());
     }
 
     public static Sonuc<T> FieldValidationError(List<string>? errorMessages = null,string message = "Hata Oluştu",int statusCode = (int)HttpStatusCode.BadRequest)
     {
         return new Sonuc<T>(message, statusCode, HataBilgisi.FieldValidationError(errorMessages));
+    }
+    
+    public static Sonuc<T> Error(HataBilgisi hataBilgisi,string message = "Hata Oluştu",int statusCode = (int)HttpStatusCode.InternalServerError)
+    {
+        return new Sonuc<T>(message, statusCode,HataBilgisi.Error());
     }
 }

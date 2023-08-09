@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-
-namespace ETicaret.API.Middleware
+﻿namespace ETicaret.API.Middleware
 {
     using System.IdentityModel.Tokens.Jwt;
     using System.Text;
+    using Helper.CustomException;
     using Helper.Globals;
     using Microsoft.Extensions.Options;
     using Microsoft.IdentityModel.Tokens;
@@ -52,14 +46,13 @@ namespace ETicaret.API.Middleware
 
                     if (jwtToken.ValidTo < DateTime.Now)
                     {
-                        httpContext.Response.StatusCode = StatusCodes.Status401Unauthorized;
-                        return;
+                        throw new TokenException();
                     }
                 }
                 else
                 {
-                    httpContext.Response.StatusCode = StatusCodes.Status401Unauthorized;
-                    return;
+                    throw new TokenNotFoundException();
+
                 }
             }
             
