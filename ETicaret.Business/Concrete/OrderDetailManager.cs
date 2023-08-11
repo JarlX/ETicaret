@@ -5,7 +5,7 @@ using Abstract;
 using DAL.Abstract.DataManagement;
 using Entity;
 
-public class OrderDetailManager : IOrderDetailService
+public class  OrderDetailManager : IOrderDetailService
 {
     private readonly IUnitOfWork _unitOfWork;
 

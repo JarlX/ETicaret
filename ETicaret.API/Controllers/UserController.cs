@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ETicaret.API.Controllers;
 
 using System.Net;
+using Aspects;
 using AutoMapper;
 using Business.Abstract;
 using Entity;
@@ -26,37 +27,21 @@ public class UserController : Controller
         _mapper = mapper;
     }
 
+    [ValidationFilter(typeof(UserRegisterValidator))]
     [HttpPost("/AddUser")]
-    [ProducesResponseType(typeof(Sonuc<UserDTOResponse>),(int)HttpStatusCode.OK)]
-     public async Task<IActionResult> AddUser(UserDTORequest userDtoRequest)
-     {
-         UserRegisterValidator userRegisterValidator = new UserRegisterValidator();
-         if (userRegisterValidator.Validate(userDtoRequest).IsValid)
-         {
-             User user = _mapper.Map<User>(userDtoRequest);
+    [ProducesResponseType(typeof(Sonuc<UserDTOResponse>), (int)HttpStatusCode.OK)]
+    public async Task<IActionResult> AddUser(UserDTORequest userDtoRequest)
+    {
 
-             await _userService.AddSync(user);
+        User user = _mapper.Map<User>(userDtoRequest);
 
-             UserDTOResponse userDtoResponse = _mapper.Map<UserDTOResponse>(user);
+        await _userService.AddSync(user);
 
-             return Ok(Sonuc<UserDTOResponse>.SuccessWithData(userDtoResponse));
-         }
+        UserDTOResponse userDtoResponse = _mapper.Map<UserDTOResponse>(user);
 
-         else
-         {
-             List<string> validatorString = new List<string>();
+        return Ok(Sonuc<UserDTOResponse>.SuccessWithData(userDtoResponse));
 
-             foreach (var validationFailure in userRegisterValidator.Validate(userDtoRequest).Errors)
-             {
-                 validatorString.Add(validationFailure.ErrorMessage);
-             }
-
-             // return BadRequest(Sonuc<UserDTOResponse>.FieldValidationError(validatorString));
-
-             throw new FieldValidationException(validatorString);
-         }
-         
-     }
+}
 
      [HttpGet("/User/{guid}")]
      [ProducesResponseType(typeof(Sonuc<UserDTOResponse>),(int)HttpStatusCode.OK)]
