@@ -68,6 +68,8 @@ public class LoginController : Controller
 
             LoginDTOResponse loginDtoResponse = new LoginDTOResponse()
             {
+                FullName =  user.FirstName + " " +user.LastName,
+                UserId = user.ID,
                 Token = token
             };
 
