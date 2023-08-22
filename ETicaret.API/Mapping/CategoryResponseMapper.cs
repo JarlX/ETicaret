@@ -17,9 +17,6 @@ public class CategoryResponseMapper : Profile
             .ForMember(dest => dest.Guid, opt =>
             {
                 opt.MapFrom(src => src.GUID);
-            }).ForMember(dest => dest.IsActive, opt =>
-            {
-                opt.MapFrom(src => src.IsActive);
             }).ReverseMap();
     }
 }

@@ -79,7 +79,7 @@ namespace ETicaret.API.Middleware
                 {
                     httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                     httpContext.Response.ContentType = "application/json";
-
+                
                     await httpContext.Response.WriteAsJsonAsync(Sonuc<bool>.Error(HataBilgisi.Error()));
                 }
             }

@@ -32,6 +32,7 @@ public class CategoryController : Controller
     public async Task<IActionResult> AddCategory(CategoryDTORequest categoryDtoRequest)
     {
         CategoryValidator categoryValidator = new CategoryValidator();
+        
         if (categoryValidator.Validate(categoryDtoRequest).IsValid)
         {
 

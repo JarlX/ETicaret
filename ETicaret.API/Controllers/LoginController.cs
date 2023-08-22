@@ -70,7 +70,11 @@ public class LoginController : Controller
             {
                 FullName =  user.FirstName + " " +user.LastName,
                 UserId = user.ID,
-                Token = token
+                Token = token,
+                Email = user.Email,
+                Address = user.Address
+                
+                
             };
 
             return Ok(Sonuc<LoginDTOResponse>.SuccessWithData(loginDtoResponse));
